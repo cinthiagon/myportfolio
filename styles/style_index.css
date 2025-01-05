@@ -229,7 +229,7 @@ body {
         gap: 20px; /* Adjust spacing between sections */
     }
     .presentation__image {
-        width: 50%; /* Adjust image size */
+        width: 40%; /* Adjust image size */
         margin: 0 auto; /* Center the image */
     }
     .portfolio__card {
@@ -264,7 +264,7 @@ body {
         gap: 20px; /* Adjust spacing between content blocks */
     }
     .presentation__image {
-        width: 80%; /* Adjust image size for mobile */
+        width: 60%; /* Adjust image size for mobile */
         margin: 0 auto; /* Center the image */
     }
     .portfolio__card {
@@ -287,7 +287,7 @@ body {
         flex-direction: row; /* Horizontal layout for small screens */
         justify-content: center; /* Center the menu */
         align-items: center; /* Vertical alignment */
-        gap: 5px; /* Add slight spacing if needed */
+        gap: 0; /* Add slight spacing if needed */
     }
     .header__menu__link {
         font-size: 1.2rem; /* Adjust link size */
@@ -299,7 +299,7 @@ body {
         font-size: 1rem; /* Smaller text for better fit */
     }
     .presentation__image {
-        width: 100%; /* Full width for small screens */
+        width: 80%; /* Full width for small screens */
         padding: 0; /* Remove padding */
         margin: 0 auto; /* Center the image */
     }
