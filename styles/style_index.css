@@ -226,7 +226,7 @@ body {
         gap: 20px; /* Adjust spacing between sections */
     }
     .presentation__image {
-        width: 80%; /* Make image smaller */
+        width: 50%; /* Make image smaller */
     }
     .portfolio__card {
         flex-wrap: wrap; /* Enable wrapping of portfolio items */
