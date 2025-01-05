@@ -257,7 +257,7 @@ body {
         gap: 20px; /* Adjust spacing between content blocks */
     }
     .presentation__image {
-        width: 50%; /* width for mobile */
+        width: 20%; /* width for mobile */
         margin: 0 auto; /* Center the image */
     }
     .portfolio__card {
@@ -265,7 +265,7 @@ body {
         gap: 10px; /* Add spacing */
     }
     .portfolio_image {
-        width: 100%; /* Full width for mobile */
+        width: 20%; /* width for mobile */
     }
     .footer {
         padding: 2%; /* Reduce footer padding */
@@ -288,12 +288,12 @@ body {
         font-size: 1rem; /* Smaller text for better fit */
     }
     .presentation_image {
-        width: 50%; /* width */
+        width: 20%; /* width */
         padding: 0; /* Remove padding */
         margin: 0 auto; /* Center the image */
     }
     .portfolio_image {
-        width: 80%; /* width */
+        width: 20%; /* width */
         padding: 0; /* Remove padding */
         margin: 0 auto; /* Center the image */
     }
