@@ -264,7 +264,7 @@ body {
         gap: 20px; /* Adjust spacing between content blocks */
     }
     .presentation__image {
-        width: 60%; /* Adjust image size for mobile */
+        width: 50%; /* Adjust image size for mobile */
         margin: 0 auto; /* Center the image */
     }
     .portfolio__card {
@@ -299,7 +299,7 @@ body {
         font-size: 1rem; /* Smaller text for better fit */
     }
     .presentation__image {
-        width: 80%; /* Full width for small screens */
+        width: 50%; /* Full width for small screens */
         padding: 0; /* Remove padding */
         margin: 0 auto; /* Center the image */
     }
