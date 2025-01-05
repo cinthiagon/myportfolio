@@ -215,7 +215,7 @@ body {
 @media (max-width: 1200px) {
     .header__menu {
         flex-direction: row; /* Keep menu items in a horizontal row */
-        justify-content: space-evenly; /* Distribute menu items evenly */
+        justify-content: space-between; /* Adjust spacing for smaller screens */
         align-items: center; /* Center-align items vertically */
         gap: 0; /* Remove unnecessary spacing */
     }
@@ -246,7 +246,7 @@ body {
 @media (max-width: 768px) {
     .header__menu {
         flex-direction: row; /* Maintain horizontal layout */
-        justify-content: space-around; /* Adjust spacing for smaller screens */
+        justify-content: space-between; /* Adjust spacing for smaller screens */
         align-items: center; /* Ensure vertical alignment */
         gap: 0; /* No extra spacing */
     }
@@ -257,8 +257,9 @@ body {
     }
     .presentation {
         flex-direction: column; /* Stack sections vertically */
-        padding: 2%; /* Reduce overall padding */
+        padding: 1%; /* Reduce overall padding */
         text-align: center; /* Center-align text content */
+        justify-content: space-evenly;
     }
     .presentation__content {
         gap: 20px; /* Adjust spacing between content blocks */
@@ -286,7 +287,7 @@ body {
 @media (max-width: 480px) {
     .header__menu {
         flex-direction: row; /* Horizontal layout for small screens */
-        justify-content: center; /* Center the menu */
+        justify-content: space-between; /* Adjust spacing for smaller screens */
         align-items: center; /* Vertical alignment */
         gap: 0; /* Add slight spacing if needed */
     }
@@ -295,8 +296,9 @@ body {
     }
     .presentation {
         flex-direction: column; /* Stack sections vertically */
-        padding: 2%; /* Reduce overall padding */
+        padding: 1%; /* Reduce overall padding */
         text-align: center; /* Center-align text content */
+        justify-content: space-evenly;
     }
     .presentation__content__title {
         font-size: 1.5rem; /* Reduce title size */
