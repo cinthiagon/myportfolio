@@ -265,6 +265,7 @@ body {
     }
     .presentation__image {
         width: 50%; /* Adjust image size for mobile */
+        max-width: 306;
         margin: 0 auto; /* Center the image */
     }
     .portfolio__card {
@@ -300,6 +301,7 @@ body {
     }
     .presentation__image {
         width: 50%; /* Full width for small screens */
+        max-width: 306;
         padding: 0; /* Remove padding */
         margin: 0 auto; /* Center the image */
     }
