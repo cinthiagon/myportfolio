@@ -211,29 +211,88 @@ body {
 }
 
 
-/* Responsive design for smaller screens (max width 1200px) */
+/* Responsive design for screens up to 1200px */
 @media (max-width: 1200px) {
     .header {
-        padding: 10%; /* Adds more padding for smaller screens */
+        padding: 5% 10%; /* Adjust header padding */
     }
     .header__menu {
-        justify-content: center; /* Centers menu items */
+        flex-direction: column; /* Stack menu items vertically */
+        gap: 20px; /* Reduce spacing between items */
     }
     .presentation {
-        flex-direction: column-reverse; /* Stacks content for readability */
-        padding: 5%; /* Reduces padding */
+        flex-direction: column; /* Stack content */
+        padding: 5%; /* Reduce padding for smaller screens */
+        gap: 20px; /* Adjust spacing between sections */
     }
-    .presentation__content {
-        width: auto; /* Adjusts content width */
+    .presentation__image {
+        width: 80%; /* Make image smaller */
+    }
+    .portfolio__card {
+        flex-wrap: wrap; /* Enable wrapping of portfolio items */
+        gap: 20px; /* Add spacing between items */
+    }
+    .portfolio_image {
+        width: 48%; /* Make portfolio items smaller */
     }
 }
 
-/* Responsive design for very small screens (max width 768px) */
+/* Responsive design for screens up to 768px (mobile screens) */
 @media (max-width: 768px) {
-    .portfolio_image {
-        width: 100%; /* Full width for smaller screens */
+    .header {
+        text-align: center; /* Center-align header content */
+        padding: 5% 5%; /* Further reduce padding */
+    }
+    .header__menu {
+        flex-direction: column; /* Stack menu links */
+        align-items: center; /* Center align links */
+        gap: 10px; /* Reduce spacing */
     }
     .presentation {
-        gap: 20px; /* Reduce spacing */
+        flex-direction: column; /* Stack sections vertically */
+        padding: 5%; /* Reduce overall padding */
+        text-align: center; /* Center-align text content */
+    }
+    .presentation__content {
+        gap: 20px; /* Adjust spacing between content blocks */
+    }
+    .presentation__image {
+        width: 100%; /* Full width for mobile */
+        margin: 0 auto; /* Center the image */
+    }
+    .portfolio__card {
+        flex-direction: column; /* Stack portfolio items */
+        gap: 10px; /* Add spacing */
+    }
+    .portfolio_image {
+        width: 100%; /* Full width for mobile */
+    }
+    .footer {
+        padding: 2%; /* Reduce footer padding */
+        font-size: 0.9rem; /* Adjust text size */
     }
 }
+
+/* Responsive design for screens up to 480px (small mobile screens) */
+@media (max-width: 480px) {
+    .header {
+        padding: 5%; /* Further reduce header padding */
+    }
+    .header__menu__link {
+        font-size: 1.2rem; /* Adjust link size */
+    }
+    .presentation__content__title {
+        font-size: 1.5rem; /* Reduce title size */
+    }
+    .presentation__content__text {
+        font-size: 1rem; /* Smaller text for better fit */
+    }
+    .portfolio_image {
+        width: 100%; /* Full width */
+        padding: 0; /* Remove padding */
+    }
+    .footer__credits {
+        font-size: 0.8rem; /* Smaller font size for footer credits */
+    }
+}
+
