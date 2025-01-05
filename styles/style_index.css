@@ -226,7 +226,7 @@ body {
         gap: 20px; /* Adjust spacing between sections */
     }
     .presentation__image {
-        width: 50%; /* Make image smaller */
+        width: 20%; /* Make image smaller */
     }
     .portfolio__card {
         flex-wrap: wrap; /* Enable wrapping of portfolio items */
@@ -265,7 +265,7 @@ body {
         gap: 10px; /* Add spacing */
     }
     .portfolio_image {
-        width: 20%; /* width for mobile */
+        width: 80%; /* width for mobile */
     }
     .footer {
         padding: 2%; /* Reduce footer padding */
@@ -293,7 +293,7 @@ body {
         margin: 0 auto; /* Center the image */
     }
     .portfolio_image {
-        width: 20%; /* width */
+        width: 80%; /* width */
         padding: 0; /* Remove padding */
         margin: 0 auto; /* Center the image */
     }
