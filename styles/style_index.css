@@ -296,6 +296,7 @@ body {
 
     .presentation__image {
         width: 70%; /* Further reduce image size */
+        max-width: 200px;
         margin: 0 auto; /* Center the image */
     }
 
