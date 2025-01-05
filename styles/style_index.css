@@ -257,7 +257,7 @@ body {
         gap: 20px; /* Adjust spacing between content blocks */
     }
     .presentation__image {
-        width: 100%; /* Full width for mobile */
+        width: 50%; /* width for mobile */
         margin: 0 auto; /* Center the image */
     }
     .portfolio__card {
@@ -288,7 +288,7 @@ body {
         font-size: 1rem; /* Smaller text for better fit */
     }
     .portfolio_image {
-        width: 100%; /* Full width */
+        width: 50%; /* Full width */
         padding: 0; /* Remove padding */
     }
     .footer__credits {
