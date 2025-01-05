@@ -213,14 +213,49 @@ body {
 
 /* Responsive design for screens up to 1200px */
 @media (max-width: 1200px) {
+    .header__menu {
+        flex-direction: row; /* Keep menu items in a horizontal row */
+        justify-content: center; /* Adjust spacing for smaller screens */
+        align-items: center; /* Center-align items vertically */
+        gap: 0; /* Remove unnecessary spacing */
+    }
+    .header__menu {
+        flex-direction: column; /* Stack menu items vertically */
+        gap: 20px; /* Reduce spacing between items */
+    }
+    .presentation {
+        flex-direction: column; /* Stack content */
+        padding: 2%; /* Reduce padding for smaller screens */
+        gap: 20px; /* Adjust spacing between sections */
+    }
     .presentation__image {
         width: 35%; /* Reduce size for medium screens */
         margin: 0 auto; /* Center the image */
     }
 }
+    .portfolio__card {
+        flex-wrap: wrap; /* Enable wrapping of portfolio items */
+        gap: 20px; /* Add spacing between items */
+    }
+    .portfolio_image {
+        width: 48%; /* Adjust portfolio item size */
+        margin: 0 auto; /* Center the images */
+    }
+}
 
 /* Responsive design for screens up to 768px (mobile screens) */
 @media (max-width: 768px) {
+    .header__menu {
+        flex-direction: row; /* Maintain horizontal layout */
+        justify-content: center; /* Adjust spacing for smaller screens */
+        align-items: center; /* Ensure vertical alignment */
+        gap: 0; /* No extra spacing */
+    }
+    .header__menu {
+        flex-direction: column; /* Stack menu links */
+        align-items: center; /* Center align links */
+        gap: 10px; /* Reduce spacing */
+    }
     .presentation__image {
         width: 50%; /* Adjust size for mobile screens */
         margin: 0 auto; /* Ensure image is centered */
@@ -232,10 +267,32 @@ body {
     .presentation__content {
         gap: 15px; /* Adjust spacing between text and buttons */
     }
+    }
+    .portfolio__card {
+        flex-direction: column; /* Stack portfolio items */
+        gap: 10px; /* Add spacing */
+    }
+    .portfolio_image {
+        width: 100%; /* Full width for mobile */
+        margin: 0 auto; /* Center the images */
+    }
+    .footer {
+        padding: 2%; /* Reduce footer padding */
+        font-size: 0.9rem; /* Adjust text size */
+    }
 }
 
 /* Responsive design for screens up to 480px (small mobile screens) */
 @media (max-width: 480px) {
+    .header__menu {
+        flex-direction: row; /* Horizontal layout for small screens */
+        justify-content: center; /* Adjust spacing for smaller screens */
+        align-items: center; /* Vertical alignment */
+        gap: 0; /* Add slight spacing if needed */
+    }
+    .header__menu__link {
+        font-size: 1.2rem; /* Adjust link size */
+    }
     .presentation__image {
         width: 70%; /* Make the image smaller for narrow screens */
         margin: 0 auto; /* Keep it centered */
@@ -250,11 +307,19 @@ body {
     .presentation__content__text {
         font-size: 1rem; /* Adjust text size for readability */
     }
-    .presentation__buttons {
+    .presentation__links__navigation {
         flex-direction: column; /* Stack buttons vertically */
         gap: 10px; /* Add spacing between buttons */
     }
+    }
+    .portfolio_image {
+        width: 100%; /* Full width for small screens */
+        padding: 0; /* Remove padding */
+        margin: 0 auto; /* Center the images */
+    }
+    .footer__credits {
+        font-size: 0.8rem; /* Smaller font size for footer credits */
+    }
 }
-
 
 
