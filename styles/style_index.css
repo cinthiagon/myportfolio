@@ -213,8 +213,11 @@ body {
 
 /* Responsive design for screens up to 1200px */
 @media (max-width: 1200px) {
-    .header {
-        padding: 5% 10%; /* Adjust header padding */
+    .header__menu {
+        flex-direction: row; /* Keep menu items in a horizontal row */
+        justify-content: space-evenly; /* Distribute menu items evenly */
+        align-items: center; /* Center-align items vertically */
+        gap: 0; /* Remove unnecessary spacing */
     }
     .header__menu {
         flex-direction: column; /* Stack menu items vertically */
@@ -226,22 +229,26 @@ body {
         gap: 20px; /* Adjust spacing between sections */
     }
     .presentation__image {
-        width: 20%; /* Make image smaller */
+        width: 50%; /* Adjust image size */
+        margin: 0 auto; /* Center the image */
     }
     .portfolio__card {
         flex-wrap: wrap; /* Enable wrapping of portfolio items */
         gap: 20px; /* Add spacing between items */
     }
     .portfolio_image {
-        width: 48%; /* Make portfolio items smaller */
+        width: 48%; /* Adjust portfolio item size */
+        margin: 0 auto; /* Center the images */
     }
 }
 
 /* Responsive design for screens up to 768px (mobile screens) */
 @media (max-width: 768px) {
-    .header {
-        text-align: center; /* Center-align header content */
-        padding: 5% 5%; /* Further reduce padding */
+    .header__menu {
+        flex-direction: row; /* Maintain horizontal layout */
+        justify-content: space-around; /* Adjust spacing for smaller screens */
+        align-items: center; /* Ensure vertical alignment */
+        gap: 0; /* No extra spacing */
     }
     .header__menu {
         flex-direction: column; /* Stack menu links */
@@ -257,7 +264,7 @@ body {
         gap: 20px; /* Adjust spacing between content blocks */
     }
     .presentation__image {
-        width: 20%; /* width for mobile */
+        width: 80%; /* Adjust image size for mobile */
         margin: 0 auto; /* Center the image */
     }
     .portfolio__card {
@@ -265,7 +272,8 @@ body {
         gap: 10px; /* Add spacing */
     }
     .portfolio_image {
-        width: 80%; /* width for mobile */
+        width: 100%; /* Full width for mobile */
+        margin: 0 auto; /* Center the images */
     }
     .footer {
         padding: 2%; /* Reduce footer padding */
@@ -275,8 +283,11 @@ body {
 
 /* Responsive design for screens up to 480px (small mobile screens) */
 @media (max-width: 480px) {
-    .header {
-        padding: 5%; /* Further reduce header padding */
+    .header__menu {
+        flex-direction: row; /* Horizontal layout for small screens */
+        justify-content: center; /* Center the menu */
+        align-items: center; /* Vertical alignment */
+        gap: 5px; /* Add slight spacing if needed */
     }
     .header__menu__link {
         font-size: 1.2rem; /* Adjust link size */
@@ -287,18 +298,19 @@ body {
     .presentation__content__text {
         font-size: 1rem; /* Smaller text for better fit */
     }
-    .presentation_image {
-        width: 20%; /* width */
+    .presentation__image {
+        width: 100%; /* Full width for small screens */
         padding: 0; /* Remove padding */
         margin: 0 auto; /* Center the image */
     }
     .portfolio_image {
-        width: 80%; /* width */
+        width: 100%; /* Full width for small screens */
         padding: 0; /* Remove padding */
-        margin: 0 auto; /* Center the image */
+        margin: 0 auto; /* Center the images */
     }
     .footer__credits {
         font-size: 0.8rem; /* Smaller font size for footer credits */
     }
 }
+
 
