@@ -261,7 +261,7 @@ body {
 
     .presentation__image {
         width: 60%; /* Adjust size for smaller screens */
-
+        margin: 0 auto; /* Center the image */
     }
 
     .portfolio_image {
@@ -296,7 +296,7 @@ body {
 
     .presentation__image {
         width: 70%; /* Further reduce image size */
-
+        margin: 0 auto; /* Center the image */
     }
 
     .presentation__content__title {
