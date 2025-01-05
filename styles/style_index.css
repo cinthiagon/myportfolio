@@ -1,0 +1,239 @@
+/* Importing Google Fonts for typography */
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+/* Defining CSS variables for colors and fonts for easy customization */
+:root {
+    --primary-color: #000000; /* Background color */
+    --secondary-color: #F6F6F6; /* Text color */
+    --tertiary-color: #90c4d9; /* Highlight color */
+    --hover-color: #272727; /* Hover effect color */
+    --overlay-opacity: rgba(0, 0, 0, 0.8); /* Increased opacity for readability */
+
+    --primary-font: 'Do Hyeon'; /* Main font for titles */
+    --secondary-font: 'Lato'; /* Secondary font for body text */
+}
+
+/* Global reset for consistent spacing across browsers */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Setting up the body with a background image and default text styles */
+body {
+    box-sizing: border-box;
+    background-color: var(--primary-color); /* Solid background for fallback */
+    color: var(--secondary-color); /* Default text color */
+    background-image: url('../assets/codigos.png'); /* Adding background image */
+    background-size: cover; /* Ensuring the image covers the full screen */
+    background-position: center; /* Centering the background image */
+    background-repeat: no-repeat; /* Prevents repetition of the image */
+}
+
+/* Header styling for top navigation menu */
+.header {
+    padding: 2% 0% 1% 15%; /* Spacing for header content */
+    background-color: var(--primary-color); /* Matches the body background */
+}
+
+.header__menu {
+    display: flex; /* Creates a horizontal menu layout */
+    gap: 80px; /* Space between menu items */
+}
+
+.header__img__menu {
+    padding: 2% 10% 5% 10%; /* Spacing around the header image */
+}
+
+.header__menu__link {
+    display: flex; /* Aligns link content in a row */
+    font-family: var(--secondary-font); /* Secondary font for menu links */
+    font-size: 1.5rem; /* Larger text for visibility */
+    font-weight: 600; /* Makes text bold */
+    color: var(--tertiary-color); /* Highlight color for links */
+    text-decoration: none; /* Removes default underline */
+    transition: color 0.3s ease-in-out; /* Smooth color transition */
+}
+
+.header__menu__link:hover {
+    text-decoration: underline; /* Adds underline on hover for interactivity */
+    color: var(--hover-color); /* Darkens link color on hover */
+}
+
+/* Presentation section for main content display */
+.presentation {
+    position: relative; /* Allows pseudo-elements to position correctly */
+    padding: 5% 15%; /* Adds spacing around the section */
+    display: flex; /* Aligns children horizontally */
+    align-items: center; /* Centers items vertically */
+    justify-content: space-between; /* Evenly spaces children */
+    gap: 82px; /* Space between content and image */
+    
+}
+
+.presentation::before {
+    content: ""; /* Adds a semi-transparent overlay */
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--overlay-opacity); /* Semi-transparent black overlay */
+    z-index: 0; /* Ensures the overlay is behind the content */
+}
+
+.presentation * {
+    position: relative; /* Ensures content appears above the overlay */
+}
+
+.presentation__content {
+    display: flex; /* Aligns text content vertically */
+    flex-direction: column;
+    gap: 40px; /* Adds space between text blocks */
+}
+
+.presentation__content__title {
+    font-size: 2.25rem; /* Large font size for titles */
+    font-family: var(--primary-font); /* Main font for titles */
+}
+
+.title-highlight {
+    color: var(--tertiary-color); /* Highlight color for emphasis */
+}
+
+.presentation__content__text {
+    font-size: 1.3rem; /* Readable font size for body text */
+    font-family: var(--secondary-font); /* Body font */
+    text-align: justify; /* Justified alignment for neatness */
+}
+
+.presentation__links {
+    display: flex; /* Horizontal layout for navigation buttons */
+    flex-direction: row;
+    justify-content: space-between; /* Even spacing for links */
+    align-items: center; /* Centers links vertically */
+    gap: 32px; /* Space between buttons */
+}
+
+.presentation__links__subtitle {
+    font-family: var(--primary-font); /* Title font for subtitles */
+    font-weight: 400; /* Regular weight */
+    font-size: 1.5rem; /* Readable size */
+    color: var(--tertiary-color); /* Highlight color */
+    text-align: center;
+}
+
+.presentation__links__navigation {
+    display: flex; /* Centers text within buttons */
+    justify-content: center;
+    gap: 16px; /* Space between icons/text in buttons */
+    border: 2px solid var(--tertiary-color); /* Button border */
+    width: 50%; /* Button width */
+    text-align: center;
+    border-radius: 8px; /* Rounded corners */
+    font-size: 1.5rem; /* Font size */
+    font-weight: 600; /* Bold text */
+    padding: 21.5px 0; /* Vertical padding for the button */
+    text-decoration: none; /* Removes underline from links */
+    color: var(--secondary-color); /* Text color */
+    font-family: var(--secondary-font); /* Body font */
+    transition: background-color 0.3s ease-in-out; /* Smooth hover transition */
+}
+
+.presentation__links__navigation:hover {
+    background-color: var(--hover-color); /* Darkens button on hover */
+}
+
+.presentation__image {
+    width: 50%; /* Sets the image to take up half the section width */
+    transition: transform 0.3s ease-in-out; /* Smooth zoom effect */
+}
+
+.presentation__image:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.skills_presentation__image {
+    width: 50%; /* Sets the image to take up half the section width */
+    transition: transform 0.3s ease-in-out; /* Smooth zoom effect */
+}
+
+.skills_presentation__image:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.portfolio__card {
+    display: flexbox; /* Aligns items*/
+    padding: 1% 0% 3% 0%;
+    width: 100%;
+    justify-content:space-between; /* Centers the content */
+    align-items: center; /* Ensures vertical alignment */
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+/* Styling the images within the portfolio */
+.portfolio_image {
+    padding: 1%;
+    width: 31%; /* Adjusted width for better visibility */
+    height: auto; /* Maintains aspect ratio */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Adds a soft shadow */
+    transition: transform 0.3s ease-in-out; /* Smooth hover effect */
+}
+
+.portfolio_image:hover {
+    transform: scale(1.1); /* Zoom effect on hover */
+}
+
+/* Footer section at the bottom of the page */
+.footer {
+    border-top: 1px solid var(--tertiary-color); /* Thin line above footer */
+    text-align: center; /* Centers footer text */
+    padding: 1%; /* Spacing above and below text */
+    margin-top: 20px; /* Space between footer and above content */
+    color: var(--tertiary-color); /* Footer text color */
+    background-color: var(--primary-color); /* Matches page background */
+    background-image: url('../assets/codigos.png'); /* Adding background image */
+    background-size: cover; /* Ensuring the image covers the full screen */
+    background-position: center; /* Centering the background image */
+    background-repeat: no-repeat; /* Prevents repetition of the image */
+    background: var(--overlay-opacity); /* Semi-transparent black overlay */
+}
+
+.footer__logo {
+    padding: 1%; /* Adds slight spacing around the logo */
+}
+
+.footer__credits {
+    padding: 1%; /* Adds spacing around credits */
+    font-family: var(--secondary-font); /* Uses secondary font */
+    font-size: 1rem; /* Small readable text size */
+    font-weight: 400; /* Regular weight for credits */
+}
+
+
+/* Responsive design for smaller screens (max width 1200px) */
+@media (max-width: 1200px) {
+    .header {
+        padding: 10%; /* Adds more padding for smaller screens */
+    }
+    .header__menu {
+        justify-content: center; /* Centers menu items */
+    }
+    .presentation {
+        flex-direction: column-reverse; /* Stacks content for readability */
+        padding: 5%; /* Reduces padding */
+    }
+    .presentation__content {
+        width: auto; /* Adjusts content width */
+    }
+}
+
+/* Responsive design for very small screens (max width 768px) */
+@media (max-width: 768px) {
+    .portfolio_image {
+        width: 100%; /* Full width for smaller screens */
+    }
+    .presentation {
+        gap: 20px; /* Reduce spacing */
+    }
+}
