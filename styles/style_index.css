@@ -260,11 +260,12 @@ body {
     }
 
     .presentation__image {
-        width: 60%; /* Adjust size for smaller screens */
+        width: 20%; /* Adjust size for smaller screens */
         margin-top: 0;
         margin-bottom: 0;
         margin-left: 0;
         margin-right: 0;
+        padding: 0%;
     }
 
     .portfolio_image {
@@ -298,12 +299,13 @@ body {
     }
 
     .presentation__image {
-        width: 70%; /* Further reduce image size */
+        width: 20%; /* Further reduce image size */
         max-width: 200px;
         margin-top: 0;
         margin-bottom: 0;
         margin-left: 0;
         margin-right: 0;
+        padding: 0%;
     }
 
     .presentation__content__title {
