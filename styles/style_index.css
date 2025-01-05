@@ -222,7 +222,7 @@ body {
     }
     .presentation {
         flex-direction: column; /* Stack content */
-        padding: 5%; /* Reduce padding for smaller screens */
+        padding: 2%; /* Reduce padding for smaller screens */
         gap: 20px; /* Adjust spacing between sections */
     }
     .presentation__image {
@@ -250,7 +250,7 @@ body {
     }
     .presentation {
         flex-direction: column; /* Stack sections vertically */
-        padding: 5%; /* Reduce overall padding */
+        padding: 2%; /* Reduce overall padding */
         text-align: center; /* Center-align text content */
     }
     .presentation__content {
@@ -287,8 +287,12 @@ body {
     .presentation__content__text {
         font-size: 1rem; /* Smaller text for better fit */
     }
+    .presentation_image {
+        width: 50%; /* width */
+        padding: 0; /* Remove padding */
+    }
     .portfolio_image {
-        width: 50%; /* Full width */
+        width: 80%; /* width */
         padding: 0; /* Remove padding */
     }
     .footer__credits {
