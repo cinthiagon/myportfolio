@@ -101,6 +101,23 @@ body {
     color: var(--tertiary-color); /* Highlight color for emphasis */
 }
 
+#animated-text::after{
+    content: "|";
+    animation: flash 1s infinite;
+}
+
+@keyframes flash {
+    0% {
+        opacity: 1;
+      }
+      50% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+}
+
 .presentation__content__text {
     font-size: 1.3rem; /* Readable font size for body text */
     font-family: var(--secondary-font); /* Body font */
@@ -317,6 +334,3 @@ body {
         font-size: 0.8rem; /* Smaller font size for footer credits */
     }
 }
-
-
-
